@@ -1,0 +1,685 @@
+/*----------
+User Image Upload Section
+----------*/
+
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+#subscriber_section 
+{
+	overflow: auto;
+}
+
+#subscriptions_section
+{
+	overflow: auto;
+}
+
+#article_title 
+{
+	word-break: break-word;
+	overflow: hidden;
+}
+
+#article_content
+{
+	word-break: break-word;
+	overflow: hidden;
+}
+
+div#article_count.col- {
+	text-align: center;	
+}
+
+.icon {
+	
+}
+
+.clearfix:after {
+    content: ".";
+    clear: both;
+    display: block;
+    visibility: hidden;
+    height: 0px;
+}
+
+/* Ratings */
+.rating-section 
+{
+	overflow: auto;
+}
+
+.article-preview 
+{
+	overflow: hidden;
+	display:inline-block;
+	width:100%;
+}
+
+.article-teaser a.article-link {
+	display: block;
+}
+
+.article-a {
+	display: inline;
+}
+
+.article-preview {
+	border-bottom: 20px !important;
+}
+
+.article-teaser a.article-link *,
+.article-teaser a.article-link:link *,
+.article-teaser a.article-link:visited *,
+.article-teaser a.article-link:hover *,
+.article-teaser a.article-link:active * ,
+{
+	color: #000;
+	text-decoration: none;
+}
+
+
+
+.article-preview {
+	margin: 16px 0px !important;
+}
+
+.article-preview h3 {
+	margin: 0px !important;
+}
+
+.article-preview .article-title  {
+	margin-bottom: 8px;
+}
+/*.article-preview .article-title {
+	margin: 16px 0px 8px 0px;
+}
+
+.article-preview .article-title h3 {
+}	margin: 0px !important;
+
+.article-preview .article-content {
+	margin: 8px 0px 16px 0px;
+}*/
+
+body {
+
+
+}
+.col-box
+{
+	padding: 0px 2px !important;
+}
+
+#logo {
+	box-sizing: border-box;
+	display: inline;
+	height: 28px;
+	border: 2px solid orange;
+}
+
+.fa-cog {
+	font-size: 16px;
+	overflow: auto;
+}
+
+.options-section {
+	
+}
+
+.options {
+}
+
+.fa-cog:hover
+{
+	/*color: #000;
+	animation: 3s linear 0s normal none infinite running fa-spin;*/
+}
+
+
+textarea
+{
+    resize: none;
+    overflow: hidden;
+}
+
+/* #subscriber_section and authors_section */
+.subscription-box
+{
+	padding: 4px;
+	margin: 0px !important;
+}
+
+.subscription
+{
+	position: relative;
+	border: 1px solid #E3E3E3;
+}
+
+
+ .subscription-name 
+ {
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	overflow: hidden;
+	padding: 2px;
+	margin: 4px;
+}
+
+.subscription-name:hover 
+{
+	background-color: #CCC;
+}
+
+
+.comment {
+	position: relative;
+	margin: 2px 0px;
+	height: 48px;
+	overflow: hidden;
+
+}
+
+.comment-interaction 
+{
+}
+
+.comment-left
+{
+	display: inline-block;
+	position: absolute;
+	height: 100%;
+}
+
+.comment-middle
+{
+	
+}
+
+.comment-right 
+{
+	display: inline-block;
+	height: 100%;
+}
+
+.comment-commenter 
+{
+	
+}
+
+.comment-content 
+{ 
+	
+}
+
+hr
+{
+	height: 1px;
+	background-color: #CCC;
+}
+
+.comment-timestamp
+{
+
+}
+
+.comment .userimage
+{
+	width: 48px;
+	height: 48px;
+}
+
+.glyphicons-camera {
+	width: 20px;
+}
+
+inbo {
+	border: 1px solid #E3E3E3;
+}
+
+oubo {
+	border: 1px solid #E3E3E3;
+}
+
+#userimage_section {
+	position: relative;
+}
+
+#username_section {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    overflow: hidden;
+    padding: 2px;
+    margin: 4px;
+    background-color
+    color: #FFF;
+}
+
+#userimage {
+	width: 100%;
+	position: relative;
+}
+
+.userimage {
+	border: 1px solid #E3E3E3;
+}
+
+#comment_section hr
+{
+	margin: 2px 0px;
+	height: 1px;
+	background-color: #CCC;
+}
+#articles_count {
+	margin-bottom: 8px;
+	text-align: center;
+}
+
+#comment_count 
+{
+	margin-top: 2px;
+	padding: 2px;
+	border-top: 1px solid #CCC;
+	text-align: center;
+}
+
+
+#user_image_section {
+	position: relative;
+}
+
+#user_image_upload_button {
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+	margin: 0px;
+	z-index: 9991;
+	color: #000;
+}
+
+.modal {
+	z-index: 9999;
+}
+
+/*bootstrap remove all borders from col-*/
+div[class^="col-"] 
+{
+	border-radius: 0;
+}
+
+img {
+	max-width:100%;
+	width: auto;
+	height: auto;
+	/*border: 1px solid #E3E3E3;*/
+}
+
+#user_image_upload_select {
+	width: 1px;
+	height: 1px;
+	visiblity: hidden;
+}
+
+#user_image {
+	border: 1px solid #E3E3E3;
+	max-height: 256px;
+}
+
+/*----------
+END User Image Upload Section
+----------*/
+
+*{
+}
+
+body {
+	margin-top: 56px;
+}
+
+#recent_articles {
+}
+
+.hidden {
+	visibility: hidden;
+}
+
+.ghost {
+	display: none;
+}
+
+/*----------
+Carousel
+----------*/
+
+#article_images_slider .item {
+
+}
+
+.articleimage {
+	max-width: 100%;
+	max-height: 100%;
+	display: block;
+	margin: 0px auto;
+}
+
+.carousel-inner {
+}
+
+.item > img{
+	/*width: 100%;*/
+	border: 1px solid #E3E3E3;	
+	height: 5px;
+}
+
+#article_images_upload_select {
+	visibility: hidden;
+	width: 1px;
+	height: 1px;
+	display: inline;
+}
+
+#article
+{
+	text-align: justify;
+}
+
+
+/*----------
+Article Images Preview Section
+----------*/
+
+.form-control {
+	 border-radius: 0;
+}
+
+#article_images_preview_section {
+	height: 50px;
+	background-color: #E3E3E3;
+}
+
+#article_template
+{
+	border-color: #4E4E50;
+	padding: 2px;
+	
+}
+
+#articleimage_preview{
+	background-color: #orange;
+	height: auto;
+	width: auto;
+}
+
+.dz-details {
+	display: none;
+}
+
+#articleimage_dropzone {
+	min-height: 64px;
+	height: auto;
+}
+
+#info_section
+{
+	overflow: auto;
+}
+.navbar {
+	border-bottom: none;
+	z-index: 9999;
+}
+
+#other_articles > div
+{
+	text-align: center;
+}
+/*---------
+Progressbar
+---------*/
+#progress_bar {
+	width: 100%;
+	background-color: #232323;
+	overflow: hidden;
+}
+
+
+/*---------
+Profile Picture Upload Section
+---------*/
+#profile_picture_upload_select {
+	visibility: hidden;
+}
+
+#profile_picture {
+	position: relative;
+	width: 128px;
+	height: 128px;
+	border: 1px solid #000000;
+	background-image: url(/img/0rWSiwFDgH7TPOqb.png)
+}
+
+h3#username {
+	display: inline;
+	//float: right;
+}
+
+#profile_picture_upload_button {
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+	margin: 2px;
+	z-index: 999;
+}
+/*form[enctype="multipart/form-data"]
+{
+	visibility: hidden;
+	display: none;
+}*/
+
+#article_images_form
+{
+	visibility: hidden;
+	display: none;	
+}
+
+.navbar-inner 
+{ 
+	background-color: darkslateblue;
+}
+
+.navbar-brand
+{
+	color: #FFF !important;	
+}
+.navbar-brand:hover
+{
+	color: #FFF !important;
+}
+
+/*.article-interaction*/
+
+.article-interaction i
+{
+	background-color: darkslateblue;
+	color: #FFF;
+	padding: 2px;
+}
+
+.article-interaction a {
+	display: inline !important;
+	color: #000;
+}
+
+.article-interaction a:hover {
+	text-decoration: none;
+	color: #000;
+}
+
+.active {
+	color: orange !important;
+}
+
+.absolute {
+	position: absolute;
+}
+.box {
+	padding: 1px;
+}
+
+div {
+	display: block;
+}
+
+.above
+{
+	overflow: visible;
+	display: block;
+	width: 100%;
+	margin: 0px;
+	padding-bottom: 2px;
+	border-bottom: 1px solid #CCC;
+}
+
+.below
+{
+	display: block;
+	width: 100%;
+	margin: 0px;
+	padding-top: 2px;
+	border-top: 1px solid #CCC;
+}
+
+#publisr {
+	color: orange;
+}
+
+/*div {
+    word-wrap: break-word;
+}*/
+
+.ptr {
+	cursor:pointer;
+	cursor:hand;	
+}
+
+.ptr:hover {
+	cursor:pointer;
+	cursor:hand;
+}
+
+.btn-prim {
+  background-color: #483d8b;
+  border-color: #483d8b;
+  color: #fff;
+}
+
+.btn-prim:hover,
+.btn-prim:focus,
+.btn-prim:active,
+.btn-prim.active {
+  background-color: #3f3579;
+  border-color: #362d68;
+  color: #fff;
+}
+
+/*
+.btn-prim.disabled:hover,
+.btn-prim.disabled:focus,
+.btn-prim.disabled:active,
+.btn-prim.disabled.active,
+.btn-prim[disabled]:hover,
+.btn-prim[disabled]:focus,
+.btn-prim[disabled]:active,
+.btn-prim[disabled].active,
+fieldset[disabled] .btn-prim:hover,
+fieldset[disabled] .btn-prim:focus,
+fieldset[disabled] .btn-prim:active,
+fieldset[disabled] .btn-prim.active {
+  background-color: #483d8b;
+  border-color: #483d8b;
+  color: #fff;
+}*/
+
+.btn-sec {
+  background-color: #FFA500;
+  border-color: #FFA500;
+  color: #fff;
+}
+.btn-sec:hover,
+.btn-sec:focus,
+.btn-sec:active,
+.btn-sec.active {
+  background-color: #e69500;
+  border-color: #cc8400;
+  color: #fff;
+}
+
+
+/*
+.btn-sec.disabled:hover,
+.btn-sec.disabled:focus,
+.btn-sec.disabled:active,
+.btn-sec.disabled.active,
+.btn-sec[disabled]:hover,
+.btn-sec[disabled]:focus,
+.btn-sec[disabled]:active,
+.btn-sec[disabled].active,
+fieldset[disabled] .btn-sec:hover,
+fieldset[disabled] .btn-sec:focus,
+fieldset[disabled] .btn-sec:active,
+fieldset[disabled] .btn-sec.active {
+  background-color: #FFA500;
+  border-color: #FFA500;
+  color: #fff;
+}*/
+
+/* Bootstrap Media Query Section */ 
+/* CUSTOM */
+@media only screen and (min-width : 320px){
+ 
+}
+ 
+/* XS */
+@media only screen and (min-width : 480px){
+}
+ 
+/* SM */
+@media only screen and (min-width : 768px){
+	
+
+}
+
+/* MD */
+@media only screen and (min-width : 992px){
+
+}
+
+/* LG */
+@media only screen and (min-width : 1200px){
+
+}
+
+.col-box
+{
+	padding: 0px 4px !important;
+}
+
+.col-box [class^="col-"]
+{
+	margin-bottom: 8px;
+}
+
+.well 
+{
+	border-radius: 0px;
+	border-color: #CCC;
+}
